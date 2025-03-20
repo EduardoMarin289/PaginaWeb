@@ -12,37 +12,57 @@
     <form action="#" method="post">
         <!-- Pregunta 1 -->
         <h2>1. ¿Para qué planeas usar la computadora?</h2>
-        <label for="uso_computadora">Escribe tu respuesta aquí:</label><br>
-        <input type="text" id="uso_computadora" name="uso_computadora" required><br><br>
+        <select id="uso_computadora" name="uso_computadora" required>
+            <option value="gaming">Gaming</option>
+            <option value="oficina">Trabajo de oficina</option>
+            <option value="edicion">Edición de video/diseño</option>
+            <option value="estudio">Estudios/tareas</option>
+            <option value="programacion">Programación</option>
+        </select><br><br>
 
         <!-- Pregunta 2 -->
         <h2>2. ¿Cuál es tu presupuesto para la computadora?</h2>
-        <label for="presupuesto">Escribe tu respuesta aquí:</label><br>
-        <input type="text" id="presupuesto" name="presupuesto" required><br><br>
+        <select id="presupuesto" name="presupuesto" required>
+            <option value="menos_10000">Menos de $10,000 MXN</option>
+            <option value="10000_20000">$10,000 - $20,000 MXN</option>
+            <option value="20000_30000">$20,000 - $30,000 MXN</option>
+            <option value="mas_30000">Más de $30,000 MXN</option>
+        </select><br><br>
 
         <!-- Pregunta 3 -->
         <h2>3. ¿Qué tan importante es la velocidad para ti?</h2>
-        <label for="velocidad">Escribe tu respuesta aquí:</label><br>
-        <input type="text" id="velocidad" name="velocidad" required><br><br>
+        <select id="velocidad" name="velocidad" required>
+            <option value="baja">No es tan importante</option>
+            <option value="media">Moderadamente importante</option>
+            <option value="alta">Muy importante</option>
+        </select><br><br>
 
         <!-- Pregunta 4 -->
         <h2>4. ¿Prefieres una computadora portátil o de escritorio?</h2>
-        <label for="tipo_computadora">Escribe tu respuesta aquí:</label><br>
-        <input type="text" id="tipo_computadora" name="tipo_computadora" required><br><br>
+        <select id="tipo_computadora" name="tipo_computadora" required>
+            <option value="portatil">Portátil</option>
+            <option value="escritorio">Escritorio</option>
+        </select><br><br>
 
         <!-- Pregunta 5 -->
         <h2>5. ¿Necesitas una computadora con buenas características gráficas?</h2>
-        <label for="grafica">Escribe tu respuesta aquí:</label><br>
-        <input type="text" id="grafica" name="grafica" required><br><br>
+        <select id="grafica" name="grafica" required>
+            <option value="no_importante">No es importante</option>
+            <option value="media">Moderadamente importante</option>
+            <option value="alta">Muy importante</option>
+        </select><br><br>
 
         <!-- Pregunta 6 -->
         <h2>6. ¿Cuánto espacio de almacenamiento necesitas?</h2>
-        <label for="almacenamiento">Escribe tu respuesta aquí:</label><br>
-        <input type="text" id="almacenamiento" name="almacenamiento" required><br><br>
+        <select id="almacenamiento" name="almacenamiento" required>
+            <option value="menos_256">Menos de 256 GB</option>
+            <option value="256_512">256 GB - 512 GB</option>
+            <option value="512_1tb">512 GB - 1 TB</option>
+            <option value="mas_1tb">Más de 1 TB</option>
+        </select><br><br>
 
         <!-- Botón para enviar -->
         <button type="submit">Enviar respuestas</button>
     </form>
-
 </body>
 </html>

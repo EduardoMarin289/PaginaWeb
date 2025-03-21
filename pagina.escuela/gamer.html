@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREVOD PC - Gamer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FREVOD PC - Gamer</h1>
+    </header>
+    <nav>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/pagina.escuela/inicio.html">Home</a></li>
+                    <li><a href="/pagina.escuela/Estudiantes.html">Estudiantes</a></li>
+                    <li><a href="/pagina.escuela/gamer.html">Gamer</a></li>
+                    <li><a href="/pagina.escuela/trabajadores.html">Trabajadores</a></li>
+                    <li><a href="/pagina.escuela/uso personal.html">Uso Personal</a></li>
+                    <li><a href="/pagina.escuela/economicas.html">Económicas</a></li>
+                    <li><a href="/pagina.escuela/shsh.html">Promociones</a></li>
+                    <li><a href="/pagina.escuela/info.html">Info</a></li>
+                </ul>
+            </nav>
+        </header>
+    </nav>
+    <div class="container" id="product-container">
+        <!-- Las tarjetas de productos se generarán dinámicamente con JavaScript -->
+    </div>
+    <footer>
+        <p>&copy; 2023 FREVOD PC</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Datos de las 20 computadoras gamer
+        const products = [
+            { id: 1, name: "PC Gamer 1", image: "gamer1.jpg", description: "Comentarios sobre la PC Gamer 1." },
+            { id: 2, name: "PC Gamer 2", image: "gamer2.jpg", description: "Comentarios sobre la PC Gamer 2." },
+            { id: 3, name: "PC Gamer 3", image: "gamer3.jpg", description: "Comentarios sobre la PC Gamer 3." },
+            { id: 4, name: "PC Gamer 4", image: "gamer4.jpg", description: "Comentarios sobre la PC Gamer 4." },
+            { id: 5, name: "PC Gamer 5", image: "gamer5.jpg", description: "Comentarios sobre la PC Gamer 5." },
+            { id: 6, name: "PC Gamer 6", image: "gamer6.jpg", description: "Comentarios sobre la PC Gamer 6." },
+            { id: 7, name: "PC Gamer 7", image: "gamer7.jpg", description: "Comentarios sobre la PC Gamer 7." },
+            { id: 8, name: "PC Gamer 8", image: "gamer8.jpg", description: "Comentarios sobre la PC Gamer 8." },
+            { id: 9, name: "PC Gamer 9", image: "gamer9.jpg", description: "Comentarios sobre la PC Gamer 9." },
+            { id: 10, name: "PC Gamer 10", image: "gamer10.jpg", description: "Comentarios sobre la PC Gamer 10." },
+            { id: 11, name: "PC Gamer 11", image: "gamer11.jpg", description: "Comentarios sobre la PC Gamer 11." },
+            { id: 12, name: "PC Gamer 12", image: "gamer12.jpg", description: "Comentarios sobre la PC Gamer 12." },
+            { id: 13, name: "PC Gamer 13", image: "gamer13.jpg", description: "Comentarios sobre la PC Gamer 13." },
+            { id: 14, name: "PC Gamer 14", image: "gamer14.jpg", description: "Comentarios sobre la PC Gamer 14." },
+            { id: 15, name: "PC Gamer 15", image: "gamer15.jpg", description: "Comentarios sobre la PC Gamer 15." },
+            { id: 16, name: "PC Gamer 16", image: "gamer16.jpg", description: "Comentarios sobre la PC Gamer 16." },
+            { id: 17, name: "PC Gamer 17", image: "gamer17.jpg", description: "Comentarios sobre la PC Gamer 17." },
+            { id: 18, name: "PC Gamer 18", image: "gamer18.jpg", description: "Comentarios sobre la PC Gamer 18." },
+            { id: 19, name: "PC Gamer 19", image: "gamer19.jpg", description: "Comentarios sobre la PC Gamer 19." },
+            { id: 20, name: "PC Gamer 20", image: "gamer20.jpg", description: "Comentarios sobre la PC Gamer 20." }
+        ];
+
+        // Función para generar las tarjetas de productos
+        function renderProducts() {
+            const container = document.getElementById("product-container");
+            products.forEach(product => {
+                const productCard = `
+                    <div class="product">
+                        <img src="${product.image}" alt="${product.name}" class="product-image">
+                        <h3>${product.name}</h3>
+                        <p>${product.description}</p>
+                        <button onclick="addToCart()">Agregar al Carrito</button>
+                    </div>
+                `;
+                container.innerHTML += productCard;
+            });
+        }
+
+        // Llamar a la función para renderizar los productos
+        renderProducts();
+    </script>
+</body>
+</html>

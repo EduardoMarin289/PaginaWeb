@@ -3,56 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FREVOD PC - Trabajadores</title>
+    <meta name="description" content="Soluciones tecnológicas para profesionales">
+    <title>FRENVOD PC - Trabajadores</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>FREVOD PC - Trabajadores</h1>
+        <h1><strong>FRENVOD PC</strong> - <mark>Profesionales</mark></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#oficina">Oficina</a></li>
+                <li><a href="#teletrabajo">Teletrabajo</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <a href="index.html">HOME</a> <!-- Enlace de regreso a la página principal -->
-        <a href="#">ESTUDIANTES</a>
-        <a href="#">GAMER</a>
-        <a href="trabajadores.html">TRABAJADORES</a> <!-- Enlace activo -->
-        <a href="#">USO PERSONAL</a>
-        <a href="economicas.html">ECONOMICAS</a>
-        <a href="#">PROMOCIONES</a>
-        <a href="#">INFO</a>
-    </nav>
-    <div class="container">
-        <!-- Producto 1 -->
-        <div class="product">
-            <img src="trabajador1.jpg" alt="Computadora para Trabajadores 1" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA PARA TRABAJADORES 1</h3>
-            <p>Comentarios sobre la computadora para trabajadores 1.</p>
-            <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
 
-        <!-- Producto 2 -->
-        <div class="product">
-            <img src="trabajador2.jpg" alt="Computadora para Trabajadores 2" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA PARA TRABAJADORES 2</h3>
-            <p>Comentarios sobre la computadora para trabajadores 2.</p>
-            <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
+    <main>
+        <section id="oficina">
+            <h2><ins>Equipos para Oficina</ins></h2>
+            <article class="producto">
+                <figure>
+                    <img src="oficina1.jpg" alt="Computadora todo-en-uno para oficina" width="400" height="300">
+                    <figcaption>Paquete ejecutivo</figcaption>
+                </figure>
+                <h3>WorkStation <em>Pro</em></h3>
+                <p><del>$8,500</del> <strong>$7,599</strong> <small>+IVA</small></p>
+                <blockquote cite="https://frenvodpc.com/beneficios">
+                    "Certificado para <abbr title="Trabajo en Casa">TEC</abbr> por la STPS"
+                </blockquote>
+                <button onclick="addToCart()">Cotizar</button>
+            </article>
+        </section>
 
-        <!-- Producto 3 -->
-        <div class="product">
-            <img src="trabajador3.jpg" alt="Computadora para Trabajadores 3" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA PARA TRABAJADORES 3</h3>
-            <p>Comentarios sobre la computadora para trabajadores 3.</p>
-            <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
+        <section id="teletrabajo">
+            <h2><ins>Kits de Teletrabajo</ins></h2>
+            <table>
+                <caption>Promociones corporativas</caption>
+                <colgroup>
+                    <col span="1" style="background-color:#E3F2FD">
+                    <col span="2" style="background-color:#BBDEFB">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Paquete</th>
+                        <th scope="col">Incluye</th>
+                        <th scope="col">Garantía</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Home Office Basic</td>
+                        <td>Laptop + Webcam + Diadema</td>
+                        <td rowspan="2">3 años</td>
+                    </tr>
+                    <tr>
+                        <td>Home Office Premium</td>
+                        <td>Laptop + Doble monitor + Silla ergonómica</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <!-- Precios -->
-        <div class="price">
-            <p>Precios desde: $5000 - $9000</p>
-            <p>Especificaciones técnicas avanzadas</p>
-        </div>
-    </div>
+        <aside>
+            <h3>¿Empresa o PyME?</h3>
+            <form action="/cotizacion" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Solicitar cotización corporativa</legend>
+                    <label for="empresa">Nombre de la empresa:</label>
+                    <input type="text" id="empresa" name="empresa" required>
+                    
+                    <label for="empleados">N° de equipos requeridos:</label>
+                    <input type="number" id="empleados" name="empleados" min="1" max="100">
+                    
+                    <label for="adjunto">RFC (opcional):</label>
+                    <input type="file" id="adjunto" name="adjunto" accept=".pdf,.jpg">
+                    
+                    <input type="submit" value="Enviar solicitud">
+                </fieldset>
+            </form>
+        </aside>
+    </main>
+
     <footer>
-        <p>&copy; 2023 FREVOD PC</p>
+        <address>
+            Área corporativa: <a href="tel:+525551234567">55-5123-4567</a> |
+            <a href="mailto:corporativo@frenvodpc.com">corporativo@frenvodpc.com</a>
+        </address>
+        <p>&copy; 2023 FRENVOD PC - <small>Todos los derechos reservados</small></p>
     </footer>
     <script src="script.js"></script>
 </body>

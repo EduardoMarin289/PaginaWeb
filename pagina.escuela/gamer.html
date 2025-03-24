@@ -16,7 +16,7 @@
                 <ul>
                     <li><a href="/pagina.escuela/inicio.html">Home</a></li>
                     <li><a href="/pagina.escuela/Estudiantes.html">Estudiantes</a></li>
-                    <li><a href="/pagina.escuela/gamer.html">Gamer</a></li>
+                    <li><a href="/pagina.escuela/gamer1.html">Gamer</a></li>
                     <li><a href="/pagina.escuela/trabajadores.html">Trabajadores</a></li>
                     <li><a href="/pagina.escuela/uso personal.html">Uso Personal</a></li>
                     <li><a href="/pagina.escuela/economicas.html">Económicas</a></li>
@@ -27,14 +27,14 @@
         </header>
     </nav>
     <div class="container" id="product-container">
-        <!-- Las tarjetas de productos se generarán dinámicamente con JavaScript -->
+    
     </div>
     <footer>
         <p>&copy; 2023 FREVOD PC</p>
     </footer>
     <script src="script.js"></script>
     <script>
-        // Datos de las 20 computadoras gamer
+        // estos son los datos de las computadoras no le muevas
         const products = [
             { id: 1, name: "PC Gamer 1", image: "gamer1.jpg", description: "Comentarios sobre la PC Gamer 1." },
             { id: 2, name: "PC Gamer 2", image: "gamer2.jpg", description: "Comentarios sobre la PC Gamer 2." },
@@ -58,7 +58,7 @@
             { id: 20, name: "PC Gamer 20", image: "gamer20.jpg", description: "Comentarios sobre la PC Gamer 20." }
         ];
 
-        // Función para generar las tarjetas de productos
+    
         function renderProducts() {
             const container = document.getElementById("product-container");
             products.forEach(product => {
@@ -70,12 +70,16 @@
                         <button onclick="addToCart()">Agregar al Carrito</button>
                     </div>
                 `;
+                
                 container.innerHTML += productCard;
+                
             });
         }
 
-        // Llamar a la función para renderizar los productos
         renderProducts();
     </script>
+        <a href="/pagina.escuela/gamer1.html">
+            <button>Regresar</button>
+             </a> 
 </body>
 </html>

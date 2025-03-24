@@ -3,56 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FREVOD PC</title>
+    <meta name="description" content="Computadoras económicas para estudiantes">
+    <title>FRENVOD PC - Estudiantes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>FREVOD PC</h1>
+        <h1>FRENVOD PC - <mark>Estudiantes</mark></h1>
     </header>
     <nav>
-        <a href="#">HOME</a>
-        <a href="#">ESTUDIANTES</a>
-        <a href="#">GAMER</a>
-        <a href="#">TRABAJADORES</a>
+        <a href="index.html">HOME</a>
+        <a href="estudiantes.html" class="active">ESTUDIANTES</a>
+        <a href="gamer.html">GAMER</a>
+        <a href="trabajadores.html">TRABAJADORES</a>
         <a href="#">USO PERSONAL</a>
-        <a href="#">ECONOMICAS</a>
+        <a href="economicas.html">ECONOMICAS</a>
         <a href="#">PROMOCIONES</a>
         <a href="#">INFO</a>
     </nav>
     <div class="container">
         <!-- Producto 1 -->
-        <div class="product">
-            <img src="pc1.PNG" alt="Computadora 1" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA 1</h3>
-            <p>Comentarios sobre la computadora 1.</p>
+        <article class="product">
+            <figure>
+                <img src="estudiante1.jpg" alt="Laptop para estudiantes" width="300" height="200">
+                <figcaption>Incluye mochila y mouse</figcaption>
+            </figure>
+            <h2>Laptop Básica</h2>
+            <p><strong>Especificaciones:</strong></p>
+            <ul>
+                <li>Intel Celeron</li>
+                <li>4GB RAM</li>
+                <li>SSD 128GB</li>
+            </ul>
+            <p><del>$3,500</del> <ins>$2,999</ins></p>
             <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
+        </article>
 
         <!-- Producto 2 -->
-        <div class="product">
-            <img src="pc2.jpg" alt="Computadora 2" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA 2</h3>
-            <p>Comentarios sobre la computadora 2.</p>
+        <article class="product">
+            <img src="estudiante2.jpg" alt="Computadora de escritorio para estudiantes">
+            <h2>PC Estudio Completo</h2>
+            <p><em>Paquete ideal para tareas</em></p>
+            <blockquote>
+                "Incluye monitor 20'', teclado y mouse"
+            </blockquote>
             <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
+        </article>
 
         <!-- Producto 3 -->
-        <div class="product">
-            <img src="pc3.jpg" alt="Computadora 3" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA 3</h3>
-            <p>Comentarios sobre la computadora 3.</p>
+        <article class="product">
+            <img src="estudiante3.jpg" alt="Tablet para estudiantes">
+            <h2>Tablet Educativa</h2>
+            <p><abbr title="Incluye licencia de Office 365">Office incluido</abbr></p>
             <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
+        </article>
 
-        <!-- Precios -->
-        <div class="price">
-            <p>4500-8500</p>
-            <p>45</p>
-        </div>
+        <!-- Sección de precios -->
+        <section class="price">
+            <h3>Precios especiales para estudiantes</h3>
+            <p>Mostrar credencial para obtener <strong>10% de descuento adicional</strong></p>
+            <form action="/validar-estudiante" method="post">
+                <label for="email">Correo institucional:</label>
+                <input type="email" id="email" name="email" placeholder="usuario@university.edu" required>
+                <input type="submit" value="Verificar descuento">
+            </form>
+        </section>
     </div>
     <footer>
-        <p>&copy; 2023 FREVOD PC</p>
+        <address>
+            Horario de atención: Lunes a Viernes 8am - 6pm<br>
+            Teléfono: <a href="tel:+525551234567">55-5123-4567</a>
+        </address>
+        <p>&copy; 2025 FREnVOD PC | <a href="politica-privacidad.html">Política de privacidad</a></p>
     </footer>
     <script src="script.js"></script>
 </body>

@@ -3,66 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FREVOD PC - Económicas</title>
+    <meta name="description" content="Tecnología de bajo costo sin sacrificar calidad">
+    <title>FRENVOD PC - Económicas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>FREVOD PC - Económicas</h1>
+        <nav>
+            <ul>
+                <li><a href="/pagina.escuela/inicio.html">Home</a></li>
+                <li><a href="/pagina.escuela/Estudiantes.html">Estudiantes</a></li>
+                <li><a href="/pagina.escuela/gamer1.html">Gamer</a></li>
+                <li><a href="/pagina.escuela/trabajadores.html">Trabajadores</a></li>
+                <li><a href="/pagina.escuela/uso personal.html">Uso Personal</a></li>
+                <li><a href="/pagina.escuela/economicas.html">Económicas</a></li>
+                <li><a href="/pagina.escuela/shsh.html">Promociones</a></li>
+                <li><a href="/pagina.escuela/info.html">Info</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <header>
-            <h1>FRENVoD PC</h1>
-            <nav>
-                <header>
-                    <nav>
-                        <ul>
-                            <li><a href="/pagina.escuela/inicio.html">Home</a></li>
-                            <li><a href="/pagina.escuela/Estudiantes.html">Estudiantes</a></li>
-                            <li><a href="/pagina.escuela/gamer1.html">Gamer</a></li>
-                            <li><a href="/pagina.escuela/trabajadores.html">Trabajadores</a></li>
-                            <li><a href="/pagina.escuela/uso personal.html">Uso Personal</a></li>
-                            <li><a href="/pagina.escuela/economicas.html">Económicas</a></li>
-                            <li><a href="/pagina.escuela/shsh.html">Promociones</a></li>
-                            <li><a href="/pagina.escuela/info.html">Info</a></li>
-                        </ul>
-                    </nav>
-                </header>
-    </nav>
-    <div class="container">
-        <!-- Productos  -->
-        <div class="product">
-            <img src="economica1.jpg" alt="Computadora Económica 1" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA ECONÓMICA 1</h3>
-            <p>Comentarios sobre la computadora económica 1.</p>
-            <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
+</nav>
+</header>
 
+    <main>
+        <section id="laptops" aria-labelledby="laptops-heading">
+            <h2 id="laptops-heading"><ins>Laptops Económicas</ins></h2>
+            
+            <article class="producto economico">
+                <figure>
+                    <img src="/dianaweB/11.jpeg" alt="Laptop económica modelo E-100" width="300" height="200">
+                    <figcaption>Más vendida</figcaption>
+                </figure>
+                <div class="info-producto">
+                    <h3>Laptop <em>E-100</em></h3>
+                    <p class="precio"><del>$3,800</del> <strong>$2,999</strong></p>
+                    <ul>
+                        <li><abbr title="Procesador">CPU</abbr>: Intel Celeron</li>
+                        <li>4GB RAM</li>
+                        <li>Disco SSD 128GB</li>
+                    </ul>
+                    <button onclick="addToCart('E-100')" aria-label="Añadir Laptop E-100 al carrito">Comprar</button>
+                </div>
+            </article>
+        </section>
+        <p ></p>
+        <p ></p>
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <!-- Producto 1 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;">
+                <img src="/dianaweB/25.jpg" width="100" height="100" alt="Producto">
+                <div style="margin-left: 10px;">
+                    <p>CARACTERÍSTICAS</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
     
-        <div class="product">
-            <img src="economica2.jpg" alt="Computadora Económica 2" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA ECONÓMICA 2</h3>
-            <p>Comentarios sobre la computadora económica 2.</p>
-            <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
-
-        
-        <div class="product">
-            <img src="economica3.jpg" alt="Computadora Económica 3" class="product-image">
-            <h3>DESCRIPCION DE LA COMPUTADORA ECONÓMICA 3</h3>
-            <p>Comentarios sobre la computadora económica 3.</p>
-            <button onclick="addToCart()">Agregar al Carrito</button>
-        </div>
-
+            <!-- Producto 2 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;">
+                <img src="/dianaweB/29.jpg" width="100" height="100" alt="Producto">
+                <div style="margin-left: 10px;">
+                    <p>CARACTERÍSTICAS</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
     
-        <div class="price">
-            <p>Precios desde: $2000 - $4000</p>
-            <p>Descuentos disponibles</p>
+            <!-- Producto 3 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;">
+                <img src="/dianaweB/15.jpg" width="100" height="100" alt="Producto">
+                <div style="margin-left: 10px;">
+                    <p>CARACTERÍSTICAS</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+    
+            <!-- Producto 4 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;">
+                <img src="/dianaweB/2.jpg" width="100" height="100" alt="Producto">
+                <div style="margin-left: 10px;">
+                    <p>CARACTERÍSTICAS</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+    
+            <!-- Producto 5 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;">
+                <img src="/dianaweB/16.jpg" width="100" height="100" alt="Producto">
+                <div style="margin-left: 10px;">
+                    <p>CARACTERÍSTICAS</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
+    
+            <!-- Producto 6 -->
+            <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;">
+                <img src="/dianaweB/24.jpg" width="100" height="100" alt="Producto">
+                <div style="margin-left: 10px;">
+                    <p>CARACTERÍSTICAS</p>
+                    <button>COMPRAR</button>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2023 FREVOD PC</p>
+
+        <!-- Tabla comparativa -->
+        <section id="escritorio">
+            <h2><ins>Computadoras de Escritorio</ins></h2>
+            <table class="comparativo">
+                <caption>Comparativo de modelos económicos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Incluye</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DE-200</td>
+                        <td>$2,499</td>
+                        <td>Monitor 18.5"</td>
+                    </tr>
+                    <tr>
+                        <td>DE-300</td>
+                        <td>$3,199</td>
+                        <td>Monitor 20" + Teclado/Mouse</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="ofertas">
+            <h2><ins>¿Necesitas ayuda?</ins></h2>
+            <form id="contacto-economicas" action="/contacto" method="post">
+                <fieldset>
+                    <legend>Solicitar asesoría</legend>
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                      <!-- etiqueta lavel-->
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                    
+                    <label for="consulta">¿Qué equipo te interesa?</label>
+                       <!-- textarea-->
+                    <textarea id="consulta" name="consulta" rows="3"></textarea>
+                    
+                    <button type="submit">Enviar consulta</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="economicas-footer">
+        <address>
+            <p>Horario: Lunes a Viernes 9:00 - 18:00 hrs</p>
+            <p><a href="tel:+525551112233">55 5111 2233</a> | 
+            <a href="mailto:economicas@frenvodpc.com">economicas@frenvodpc.com</a></p>
+        </address>
+        <p>&copy; 2023 FRENVOD PC | <a href="politica-economicas.html">Términos especiales</a></p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

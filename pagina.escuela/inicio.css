@@ -1,0 +1,179 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fondo neutro */
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+section img {
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes más pequeñas */
+section img:first-of-type,
+section img:nth-of-type(2),
+section img:last-of-type {
+    max-width: 25%; /* Imágenes más pequeñas */
+}
+
+section p {
+    max-width: 65%;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Centrado de botón Tester */
+section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Imagen de bienvenida con transparencia */
+.bienvenida {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background: url('/img/inicio2.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.bienvenida::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay oscuro para mejor contraste */
+}
+
+.bienvenida img {
+    display: none; /* Ocultamos la imagen del HTML ya que la usamos como background */
+}
+
+.bienvenida-contenido {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.bienvenida h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bienvenida p {
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section img {
+        max-width: 70%;
+        margin: 20px 0;
+    }
+
+    section p {
+        max-width: 80%;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

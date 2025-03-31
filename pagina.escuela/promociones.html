@@ -12,14 +12,14 @@
                 <nav>
                     <ul> <!-- Use aquí ul -->
                         <li><a href="/pagina.escuela/inicio.html">Home</a></li> <!-- Use aquí li -->
-                        <li><a href="/pagina.escuela/Estudiantes.html">Estudiantes</a></li> <!-- Use aquí li -->
-                        <li><a href="/pagina.escuela/gamer1.html">Gamer</a></li> <!-- Use aquí li -->
-                        <li><a href="/pagina.escuela/trabajadores.html">Trabajadores</a></li> <!-- Use aquí li -->
-                        <li><a href="/pagina.escuela/uso personal.html">Uso Personal</a></li> <!-- Use aquí li -->
-                        <li><a href="/pagina.escuela/economicas.html">Económicas</a></li> <!-- Use aquí li -->
-                        <li><a href="/pagina.escuela/shsh.html">Promociones</a></li> <!-- Use aquí li -->
-                        <li><a href="/pagina.escuela/info.html">Info</a></li> <!-- Use aquí li -->
-                    </ul> <!-- Use aquí ul -->
+                        <li><a href="/pagina.escuela/Estudiantes.html">Estudiantes</a></li> 
+                        <li><a href="/pagina.escuela/gamer1.html">Gamer</a></li> 
+                        <li><a href="/pagina.escuela/trabajadores.html">Trabajadores</a></li> 
+                        <li><a href="/pagina.escuela/uso personal.html">Uso Personal</a></li> 
+                        <li><a href="/pagina.escuela/economicas.html">Económicas</a></li> 
+                        <li><a href="/pagina.escuela/promociones.html">Promociones</a></li> 
+                        <li><a href="/pagina.escuela/info.html">Info</a></li> 
+                    </ul> 
                 </nav>
             </header>
     <div style="margin-bottom: 20px;">
@@ -31,82 +31,82 @@
 
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
         <!-- Producto 1 -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> <!-- Agregue aquí div -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
             <img src="/dianaweB/13.jpeg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
                 <button>COMPRAR</button>
             </div>
-        </div> <!-- Agregue aquí div -->
+        </div> 
 
         <!-- Producto 2 -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> <!-- Agregue aquí div -->
-            <img src="/dianaweB/3.jpeg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
-            <div style="margin-left: 10px;">
+        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
+            <img src="/dianaweB/3.jpeg" width="100" height="100" alt="Producto" name="producto"> 
+            <div style="margin-left: 10px;" name="hola"></div>
+            
                 <p>CARACTERÍSTICAS</p>
                 <button>COMPRAR</button>
             </div>
-        </div> <!-- Agregue aquí div -->
+        </div> 
 
         <!-- Producto 3 -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> <!-- Agregue aquí div -->
-            <img src="/dianaweB/6.jpg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
+            <img src="/dianaweB/6.jpg" width="100" height="100" alt="Producto"> 
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
                 <button>COMPRAR</button>
             </div>
-        </div> <!-- Agregue aquí div -->
+        </div> 
 
         <!-- Producto 4 -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> <!-- Agregue aquí div -->
-            <img src="/dianaweB/30.jpg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
+            <img src="/dianaweB/30.jpg" width="100" height="100" alt="Producto"> 
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
                 <button>COMPRAR</button>
             </div>
-        </div> <!-- Agregue aquí div -->
+        </div> 
 
         <!-- Producto 5 -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> <!-- Agregue aquí div -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
             <img src="/dianaweB/5.jpeg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
                 <button>COMPRAR</button>
             </div>
-        </div> <!-- Agregue aquí div -->
+        </div> 
 
         <!-- Producto 6 -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> <!-- Agregue aquí div -->
-            <img src="/dianaweB/8.jpeg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
+        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
+            <img src="/dianaweB/8.jpeg" width="100" height="100" alt="Producto"> 
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
                 <button>COMPRAR</button>
             </div>
-        </div> <!-- Agregue aquí div -->
+        </div> 
     </div>
-
-    <table summary="Tabla de productos en promoción"> <!-- Use aquí table con summary -->
+  <!-- summary -->
+    <table summary="Tabla de productos en promoción"> 
         <caption>Productos en Oferta</caption> <!-- Use aquí caption -->
         <thead>
-            <tr> <!-- Use aquí tr -->
-                <th>Producto</th> <!-- Use aquí th -->
-                <th>Precio</th> <!-- Use aquí th -->
-                <th>Acciones</th> <!-- Use aquí th -->
+            <tr> 
+                <th scope="col">Producto</th> <!--  para especificar que esta celda es para la columna Producto -->
+                <th scope="col">Precio</th> 
+                <th scope="col" colspan="2">Acciones</th> <!-- para que la celda de "Acciones" ocupe dos columnas -->
             </tr>
         </thead>
         <tbody>
-            <tr> <!-- Use aquí tr -->
-                <td>Producto 1</td> <!-- Use aquí td -->
-                <td>$100</td> <!-- Use aquí td -->
-                <td><button>Comprar</button></td> <!-- Use aquí td -->
+            <tr> 
+                <td rowspan="2">Producto 1</td> <!--  para que esta celda ocupe dos filas -->
+                <td>$100</td> 
+                <td><button>Comprar</button></td> 
             </tr>
-            <tr> <!-- Use aquí tr -->
-                <td>Producto 2</td> <!-- Use aquí td -->
-                <td>$150</td> <!-- Use aquí td -->
-                <td><button>Comprar</button></td> <!-- Use aquí td -->
+            <tr> 
+                <td>$150</td> 
+                <td><button>Comprar</button></td> 
             </tr>
         </tbody>
-    </table> <!-- Use aquí table -->
+    </table> 
 
     
 </body>

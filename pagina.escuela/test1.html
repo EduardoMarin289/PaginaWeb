@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Selección de Computadora - FREVOD PC</title>
+</head>
+<body>
     <header>
         <nav>
             <ul>
@@ -8,30 +13,25 @@
                 <li><a href="/pagina.escuela/Estudiantes.html">Estudiantes</a></li>
                 <li><a href="/pagina.escuela/gamer1.html">Gamer</a></li>
                 <li><a href="/pagina.escuela/trabajadores.html">Trabajadores</a></li>
-                <li><a href="/pagina.escuela/uso personal.html">Uso Personal</a></li>
+                <li><a href="/pagina.escuela/uso_personal.html">Uso Personal</a></li>
                 <li><a href="/pagina.escuela/economicas.html">Económicas</a></li>
                 <li><a href="/pagina.escuela/shsh.html">Promociones</a></li>
                 <li><a href="/pagina.escuela/info.html">Info</a></li>
             </ul>
         </nav>
     </header>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Test de Selección de Computadora - FREVOD PC</title>
-</head>
-<body>
+    
     <h1>¡Bienvenido al test para elegir tu computadora ideal!</h1>
     <p>Responde las siguientes preguntas para que te recomendemos la computadora que mejor se adapta a tus necesidades.</p>
-  <!-- video-->
-<h2>Video de Demostración</h2>
-<video width="600" controls>
-    <source src="ruta-del-video.mp4" type="video/mp4">
-    Tu navegador no soporta el elemento de video.
-</video>
+    
+    <h2>Video de Demostración</h2>
+    <video width="600" controls>
+        <source src="/uuu/gamer gay/21.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
 
-    <form action="#" method="post">
-        <!-- Pregunta 1 -->
+        <!-- from aqui-->
+    <form action="#" method="post" enctype="multipart/form-data" accept-charset="UTF-8">
         <h2>1. ¿Para qué planeas usar la computadora?</h2>
         <select id="uso_computadora" name="uso_computadora" required>
             <option value="gaming">Gaming</option>
@@ -41,52 +41,32 @@
             <option value="programacion">Programación</option>
         </select><br><br>
 
-        <!-- Pregunta 2 -->
         <h2>2. ¿Cuál es tu presupuesto para la computadora?</h2>
-        <select id="presupuesto" name="presupuesto" required>
-            <option value="menos_10000">Menos de $10,000 MXN</option>
-            <option value="10000_20000">$10,000 - $20,000 MXN</option>
-            <option value="20000_30000">$20,000 - $30,000 MXN</option>
-            <option value="mas_30000">Más de $30,000 MXN</option>
-        </select><br><br>
+        <input type="number" name="presupuesto" id="presupuesto" min="5000" max="50000" required><br><br>
 
-        <!-- Pregunta 3 -->
         <h2>3. ¿Qué tan importante es la velocidad para ti?</h2>
-        <select id="velocidad" name="velocidad" required>
-            <option value="baja">No es tan importante</option>
-            <option value="media">Moderadamente importante</option>
-            <option value="alta">Muy importante</option>
-        </select><br><br>
+        <input type="radio" name="velocidad" value="baja" checked> No es tan importante
+        <input type="radio" name="velocidad" value="media"> Moderadamente importante
+        <input type="radio" name="velocidad" value="alta"> Muy importante<br><br>
 
-        <!-- Pregunta 4 -->
         <h2>4. ¿Prefieres una computadora portátil o de escritorio?</h2>
         <select id="tipo_computadora" name="tipo_computadora" required>
             <option value="portatil">Portátil</option>
             <option value="escritorio">Escritorio</option>
         </select><br><br>
 
-        <!-- Pregunta 5 -->
         <h2>5. ¿Necesitas una computadora con buenas características gráficas?</h2>
-        <select id="grafica" name="grafica" required>
-            <option value="no_importante">No es importante</option>
-            <option value="media">Moderadamente importante</option>
-            <option value="alta">Muy importante</option>
-        </select><br><br>
+        <input type="checkbox" name="grafica" value="alta" checked> Muy importante
+        <input type="checkbox" name="grafica" value="media"> Moderadamente importante
+        <input type="checkbox" name="grafica" value="no_importante"> No es importante<br><br>
 
-        <!-- Pregunta 6 -->
         <h2>6. ¿Cuánto espacio de almacenamiento necesitas?</h2>
-        <select id="almacenamiento" name="almacenamiento" required>
-            <option value="menos_256">Menos de 256 GB</option>
-            <option value="256_512">256 GB - 512 GB</option>
-            <option value="512_1tb">512 GB - 1 TB</option>
-            <option value="mas_1tb">Más de 1 TB</option>
-        </select><br><br>
+        <input type="text" name="almacenamiento" maxlength="10" size="15" required><br><br>
 
-        
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí..."></textarea><br><br>
+
+        <button type="submit">Enviar respuestas</button>
     </form>
-    <!-- Botón para enviar -->
-    <a href="/pagina.escuela/carrito.html">
-        <button >Enviar respuestas</button>
-         </a>  
 </body>
 </html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREVOD PC - Tienda de Computadoras</title>
+</head>
+<body>
+    <!-- Encabezado con nombre de la tienda y buscador -->
+    <header>
+        <h1>FREVOD PC</h1>
+        <form>
+            <label for="busqueda">Buscar:</label>
+            <input type="search" id="busqueda" placeholder="Buscar computadoras...">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+    
+    <main>
+        <h2>Categoría de Uso Personal</h2>
+        
+        <!-- Mapa de imagen -->
+        <img src="categorias-map.jpg" alt="Las Mejores Computadoras de la Categoría" usemap="#categorias-map" width="400" height="200">
+        <map name="categorias-map">
+            <area shape="rect" coords="0,0,133,200" href="#laptops" alt="Laptops">
+            <area shape="rect" coords="134,0,266,200" href="#desktops" alt="Desktops">
+            <area shape="rect" coords="267,0,400,200" href="#allinone" alt="All-in-One">
+        </map>
+        
+        <!-- Tabla comparativa de productos -->
+        <table border="1">
+            <tr>
+                <th>Modelo</th>
+                <th>Procesador</th>
+                <th>RAM</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Laptop Gaming Ultra</td>
+                <td>Intel Core i7</td>
+                <td>16GB</td>
+                <td>$1,299.99</td>
+            </tr>
+            <tr>
+                <td>PC Gaming RGB</td>
+                <td>Intel Core i9</td>
+                <td>32GB</td>
+                <td>$2,199.99</td>
+            </tr>
+            <tr>
+                <td>Mini PC 4K Gaming</td>
+                <td>AMD Ryzen 7</td>
+                <td>16GB</td>
+                <td>$1,099.99</td>
+            </tr>
+        </table>
+        
+        <!-- Listado de computadoras -->
+        <section>
+            <!-- Computadora 1 -->
+            <article>
+                <img src="computadora1.jpg" alt="Laptop Gaming Ultra" width="300" height="200">
+                <h3>Laptop Gaming Ultra</h3>
+                <p>Procesador Intel Core i7, 16GB RAM, 512GB SSD, NVIDIA RTX 3070, 15.6" FHD 144Hz</p>
+                <p><strong>Precio: $1,299.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="video-laptop.mp4" type="video/mp4" width="300" height="150">
+                    <param name="autoplay" value="false">
+                    <embed src="video-laptop.mp4" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con select -->
+                <form>
+                    <label for="cantidad1">Cantidad:</label>
+                    <select id="cantidad1" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario1">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario1" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 2 -->
+            <article>
+                <img src="computadora2.jpg" alt="PC Gaming RGB" width="300" height="200">
+                <h3>PC Gaming RGB</h3>
+                <p>Intel Core i9, 32GB RAM, 1TB NVMe, NVIDIA RTX 4070, Windows 11 Home</p>
+                <p><strong>Precio: $2,199.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="review-pc-gaming.pdf" type="application/pdf" width="300" height="150">
+                    <param name="page" value="1">
+                    <embed src="review-pc-gaming.pdf" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con input -->
+                <form>
+                    <label for="cantidad2">Cantidad:</label>
+                    <input type="number" id="cantidad2" name="cantidad" min="1" max="5" value="1">
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario2">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario2" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 3 -->
+            <article>
+                <img src="computadora3.jpg" alt="Ultrabook Profesional" width="300" height="200">
+                <h3>Ultrabook Profesional</h3>
+                <p>Intel Core i5, 8GB RAM, 256GB SSD, 13.3" FHD, Windows 11 Home</p>
+                <p><strong>Precio: $799.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <embed src="ultrabook-360.swf" type="application/x-shockwave-flash" width="300" height="150">
+                
+                <!-- Formulario con select -->
+                <form>
+                    <label for="cantidad3">Cantidad:</label>
+                    <select id="cantidad3" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario3">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario3" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 4 -->
+            <article>
+                <img src="computadora4.jpg" alt="All-in-One Premium" width="300" height="200">
+                <h3>All-in-One Premium</h3>
+                <p>Intel Core i7, 16GB RAM, 512GB SSD, Pantalla 27" 4K, Windows 11 Pro</p>
+                <p><strong>Precio: $1,499.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="allinone-vista.mp4" type="video/mp4" width="300" height="150">
+                    <param name="autoplay" value="false">
+                    <embed src="allinone-vista.mp4" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con input -->
+                <form>
+                    <label for="cantidad4">Cantidad:</label>
+                    <input type="number" id="cantidad4" name="cantidad" min="1" max="5" value="1">
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario4">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario4" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 5 -->
+            <article>
+                <img src="computadora5.jpg" alt="Mini PC 4K Gaming" width="300" height="200">
+                <h3>Mini PC 4K Gaming</h3>
+                <p>AMD Ryzen 7, 16GB RAM, 1TB SSD, Radeon RX 6700 XT, Windows 11 Home</p>
+                <p><strong>Precio: $1,099.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="mini-pc-demo.mp4" type="video/mp4" width="300" height="150">
+                    <param name="autoplay" value="false">
+                    <embed src="mini-pc-demo.mp4" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con select -->
+                <form>
+                    <label for="cantidad5">Cantidad:</label>
+                    <select id="cantidad5" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario5">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario5" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 6 -->
+            <article>
+                <img src="computadora6.jpg" alt="Laptop Convertible" width="300" height="200">
+                <h3>Laptop Convertible</h3>
+                <p>Intel Core i5, 8GB RAM, 512GB SSD, 13.3" FHD Táctil, Windows 11 Home</p>
+                <p><strong>Precio: $899.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="convertible-demo.mp4" type="video/mp4" width="300" height="150">
+                    <param name="autoplay" value="false">
+                    <embed src="convertible-demo.mp4" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con select -->
+                <form>
+                    <label for="cantidad6">Cantidad:</label>
+                    <select id="cantidad6" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario6">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario6" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 7 -->
+            <article>
+                <img src="computadora7.jpg" alt="Workstation Profesional" width="300" height="200">
+                <h3>Workstation Profesional</h3>
+                <p>AMD Threadripper, 64GB RAM, 2TB SSD + 4TB HDD, NVIDIA RTX 4080, Windows 11 Pro</p>
+                <p><strong>Precio: $3,499.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="workstation-review.pdf" type="application/pdf" width="300" height="150">
+                    <param name="page" value="1">
+                    <embed src="workstation-review.pdf" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con input -->
+                <form>
+                    <label for="cantidad7">Cantidad:</label>
+                    <input type="number" id="cantidad7" name="cantidad" min="1" max="5" value="1">
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario7">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario7" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 8 -->
+            <article>
+                <img src="computadora8.jpg" alt="Gaming Notebook" width="300" height="200">
+                <h3>Gaming Notebook</h3>
+                <p>AMD Ryzen 9, 32GB RAM, 1TB SSD, NVIDIA RTX 3080, 17.3" QHD 165Hz, Windows 11 Home</p>
+                <p><strong>Precio: $2,299.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="gaming-notebook.mp4" type="video/mp4" width="300" height="150">
+                    <param name="autoplay" value="false">
+                    <embed src="gaming-notebook.mp4" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con select -->
+                <form>
+                    <label for="cantidad8">Cantidad:</label>
+                    <select id="cantidad8" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario8">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario8" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 9 -->
+            <article>
+                <img src="computadora9.jpg" alt="Chromebook Educativo" width="300" height="200">
+                <h3>Chromebook Educativo</h3>
+                <p>Intel Celeron, 4GB RAM, 64GB eMMC, 14" HD, Chrome OS</p>
+                <p><strong>Precio: $349.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="chromebook-uso.mp4" type="video/mp4" width="300" height="150">
+                    <param name="autoplay" value="false">
+                    <embed src="chromebook-uso.mp4" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con input -->
+                <form>
+                    <label for="cantidad9">Cantidad:</label>
+                    <input type="number" id="cantidad9" name="cantidad" min="1" max="5" value="1">
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario9">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario9" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+            
+            <!-- Computadora 10 -->
+            <article>
+                <img src="computadora10.jpg" alt="PC Compacto Multimedia" width="300" height="200">
+                <h3>PC Compacto Multimedia</h3>
+                <p>Intel Core i5, 16GB RAM, 512GB SSD, Intel Iris Xe Graphics, Windows 11 Home</p>
+                <p><strong>Precio: $799.99</strong></p>
+                
+                <!-- Objeto multimedia -->
+                <object data="pc-multimedia.mp4" type="video/mp4" width="300" height="150">
+                    <param name="autoplay" value="false">
+                    <embed src="pc-multimedia.mp4" width="300" height="150">
+                </object>
+                
+                <!-- Formulario con select -->
+                <form>
+                    <label for="cantidad10">Cantidad:</label>
+                    <select id="cantidad10" name="cantidad">
+                        <option value="1">1 unidad</option>
+                        <option value="2">2 unidades</option>
+                        <option value="3">3 unidades</option>
+                    </select>
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+                
+                <!-- Botón de comentarios -->
+                <details>
+                    <summary>Comentarios</summary>
+                    <div>
+                        <form>
+                            <label for="nuevoComentario10">Deja tu comentario:</label>
+                            <textarea id="nuevoComentario10" rows="4" cols="40"></textarea>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </details>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 FREVOD PC. Todos los derechos reservados.</p>
+        <address>
+            Contacto: info@frevodpc.com | Teléfono: (123) 456-7890
+        </address>
+    </footer>
+</body>
+</html>

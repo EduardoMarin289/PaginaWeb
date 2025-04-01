@@ -108,7 +108,7 @@ footer {
 .bienvenida {
     position: relative;
     width: 100%;
-    height: 85vh;
+    height: 82vh;
     background: url('/img/inicio2.webp') center/cover no-repeat;
     display: flex;
     align-items: center;

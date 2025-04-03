@@ -28,84 +28,103 @@
     <h1>PROMOCIONES</h1>
 
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-        <!-- Producto 1 -->
+        <!-- Lista de productos con sus precios -->
         <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
-            <img src="/dianaweB/13.jpeg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
+            <img src="/dianaweB/13.jpeg" width="100" height="100" alt="Producto 1"> 
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
+                <p>Precio: $25,000</p>
+                <button>COMPRAR</button>
+            </div>
+        </div> 
+        
+        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
+            <img src="/dianaweB/3.jpeg" width="100" height="100" alt="Producto 2"> 
+            <div style="margin-left: 10px;">
+                <p>CARACTERÍSTICAS</p>
+                <p>Precio: $18,500</p>
                 <button>COMPRAR</button>
             </div>
         </div> 
 
-        <!-- Producto 2 -->
         <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
-            <img src="/dianaweB/3.jpeg" width="100" height="100" alt="Producto" name="producto"> 
-            <div style="margin-left: 10px;" name="hola"></div>
-            
+            <img src="/dianaweB/6.jpg" width="100" height="100" alt="Producto 3"> 
+            <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
+                <p>Precio: $22,000</p>
                 <button>COMPRAR</button>
             </div>
         </div> 
 
-        <!-- Producto 3 -->
         <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
-            <img src="/dianaweB/6.jpg" width="100" height="100" alt="Producto"> 
+            <img src="/dianaweB/30.jpg" width="100" height="100" alt="Producto 4"> 
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
+                <p>Precio: $30,000</p>
                 <button>COMPRAR</button>
             </div>
         </div> 
 
-        <!-- Producto 4 -->
         <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
-            <img src="/dianaweB/30.jpg" width="100" height="100" alt="Producto"> 
+            <img src="/dianaweB/5.jpeg" width="100" height="100" alt="Producto 5"> 
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
+                <p>Precio: $20,500</p>
                 <button>COMPRAR</button>
             </div>
         </div> 
 
-        <!-- Producto 5 -->
         <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
-            <img src="/dianaweB/5.jpeg" width="100" height="100" alt="Producto"> <!-- Use aquí img -->
+            <img src="/dianaweB/8.jpeg" width="100" height="100" alt="Producto 6"> 
             <div style="margin-left: 10px;">
                 <p>CARACTERÍSTICAS</p>
-                <button>COMPRAR</button>
-            </div>
-        </div> 
-
-        <!-- Producto 6 -->
-        <div style="display: flex; align-items: center; margin-bottom: 20px; width: 30%;"> 
-            <img src="/dianaweB/8.jpeg" width="100" height="100" alt="Producto"> 
-            <div style="margin-left: 10px;">
-                <p>CARACTERÍSTICAS</p>
+                <p>Precio: $27,500</p>
                 <button>COMPRAR</button>
             </div>
         </div> 
     </div>
-  <!-- summary -->
+
+    <!-- Tabla de productos en promoción -->
     <table summary="Tabla de productos en promoción"> 
-        <caption>Productos en Oferta</caption> <!-- Use aquí caption -->
+        <caption>Productos en Oferta</caption> <!-- Proporciona un título a la tabla -->
         <thead>
             <tr> 
-                <th scope="col">Producto</th> <!--  para especificar que esta celda es para la columna Producto -->
-                <th scope="col">Precio</th> 
-                <th scope="col" colspan="2">Acciones</th> <!-- para que la celda de "Acciones" ocupe dos columnas -->
+                <th scope="col" id="producto">Producto</th> <!-- Define que es un encabezado de columna -->
+                <th scope="col" id="precio">Precio</th> 
+                <th scope="col" colspan="2" id="acciones">Acciones</th> <!-- colspan="2" hace que abarque dos columnas -->
             </tr>
         </thead>
         <tbody>
             <tr> 
-                <td rowspan="2">Producto 1</td> <!--  para que esta celda ocupe dos filas -->
-                <td>$100</td> 
-                <td><button>Comprar</button></td> 
+                <td headers="producto" rowspan="2">Producto 1</td> <!-- rowspan="2" para abarcar dos filas -->
+                <td headers="precio">$25,000</td> 
+                <td headers="acciones"><button>Comprar</button></td> 
             </tr>
             <tr> 
-                <td>$150</td> 
-                <td><button>Comprar</button></td> 
+                <td headers="precio">$18,500</td> 
+                <td headers="acciones"><button>Comprar</button></td> 
+            </tr>
+            <tr> 
+                <td headers="producto">Producto 3</td> 
+                <td headers="precio">$22,000</td> 
+                <td headers="acciones"><button>Comprar</button></td> 
+            </tr>
+            <tr> 
+                <td headers="producto">Producto 4</td> 
+                <td headers="precio">$30,000</td> 
+                <td headers="acciones"><button>Comprar</button></td> 
+            </tr>
+            <tr> 
+                <td headers="producto">Producto 5</td> 
+                <td headers="precio">$20,500</td> 
+                <td headers="acciones"><button>Comprar</button></td> 
+            </tr>
+            <tr> 
+                <td headers="producto">Producto 6</td> 
+                <td headers="precio">$27,500</td> 
+                <td headers="acciones"><button>Comprar</button></td> 
             </tr>
         </tbody>
     </table> 
-
-    
 </body>
 </html>

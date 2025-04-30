@@ -1,0 +1,112 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f0f0f;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegación */
+header {
+    background: linear-gradient(90deg, #1f1f1f, #3f3f3f);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ffc8;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff00cc;
+}
+
+/* Buscador */
+div input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 10px;
+}
+
+div button {
+    padding: 10px 15px;
+    background-color: #00ffc8;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+div button:hover {
+    background-color: #ff00cc;
+    color: white;
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    color: #00ffc8;
+    margin-top: 20px;
+}
+
+/* Productos */
+div[style*="flex"] {
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+div[style*="width: 30%"] {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 255, 200, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div[style*="width: 30%"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 0, 204, 0.4);
+}
+
+img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* Botones dentro de productos */
+div[style*="margin-left: 10px;"] button {
+    margin-right: 10px;
+    margin-top: 5px;
+}

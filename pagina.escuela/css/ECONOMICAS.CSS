@@ -1,0 +1,225 @@
+/* FUENTE Y FONDO GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+}
+
+/* NAVBAR PRO */
+header {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #00ff99;
+    color: #0f0f0f;
+    transform: scale(1.05);
+}
+
+/* CONTENIDO PRINCIPAL */
+main {
+    padding: 20px;
+}
+
+/* SECCIÓN DE LAPTOS ECONÓMICAS */
+#laptops {
+    margin-bottom: 30px;
+}
+
+#laptops h2 {
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+#laptops article {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 140, 0.3);
+}
+
+#laptops img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.info-producto h3 {
+    color: #00ff99;
+    margin: 10px 0;
+}
+
+.info-producto p {
+    font-size: 18px;
+}
+
+.precio {
+    font-size: 20px;
+    color: #00ff99;
+    font-weight: bold;
+}
+
+.precio del {
+    color: #ff0000;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* PRODUCTOS EN VISTA DE REJILLA */
+#laptops div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#laptops div div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+#laptops div img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#laptops div p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#laptops div button {
+    width: 100%;
+}
+
+/* TABLA COMPARATIVA */
+table.comparativo {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table.comparativo caption {
+    font-size: 24px;
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+table.comparativo th, table.comparativo td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #00ff99;
+    font-size: 18px;
+    color: #fff;
+}
+
+table.comparativo th {
+    background-color: #161616;
+}
+
+table.comparativo tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 255, 140, 0.3);
+}
+
+form legend {
+    color: #00ff99;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+form label {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* PIE DE PÁGINA */
+footer.economicas-footer {
+    background-color: #161616;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer.economicas-footer a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+footer.economicas-footer a:hover {
+    text-decoration: underline;
+}

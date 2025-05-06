@@ -1,0 +1,192 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #006400; /* Verde oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    background-color: #228B22; /* Verde más claro */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #004d00; /* Verde más oscuro al pasar el ratón */
+    border-radius: 5px;
+}
+
+/* Estilos para la barra de búsqueda */
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #006400; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004d00;
+}
+
+/* Estilos para el menú lateral */
+td {
+    padding: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #006400;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #006400;
+    text-decoration: none;
+}
+
+ul li a button {
+    background-color: #228B22; /* Verde claro */
+    padding: 10px 15px;
+}
+
+ul li a button:hover {
+    background-color: #004d00;
+}
+
+/* Estilos para los productos destacados */
+h2 {
+    font-size: 28px;
+    color: #006400;
+    margin-top: 30px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+div div {
+    text-align: center;
+}
+
+div img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+div button {
+    background-color: #006400;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+div button:hover {
+    background-color: #004d00;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #006400;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div div {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    td {
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

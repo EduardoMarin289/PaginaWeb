@@ -1,0 +1,98 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #00ffcc;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #00ffcc;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #00ffcc;
+    color: #0f0f0f;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #00ffcc;
+    border: none;
+    border-radius: 10px;
+    color: #0f0f0f;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00bfa6;
+}
+
+h2 {
+    margin: 40px 0 20px 0;
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+div[style*="display: flex"] {
+    padding: 0 40px;
+}
+
+div[style*="display: flex"] > div {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+div[style*="display: flex"] > div:hover {
+    transform: scale(1.05);
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 8px #00ffcc;
+}

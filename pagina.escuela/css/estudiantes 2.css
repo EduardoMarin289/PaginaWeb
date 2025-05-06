@@ -1,0 +1,228 @@
+/* FUENTE Y FONDO GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+}
+
+/* HEADER Y NAVBAR */
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 255, 140, 0.3);
+    text-align: center;
+}
+
+header h1 {
+    color: #00ff99;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #00ff99;
+    color: #0f0f0f;
+    transform: scale(1.05);
+}
+
+/* BUSCADOR */
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 25px;
+    border: 2px solid #00ff99;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* CONTAINER Y PRODUCTOS */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #00ff99;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.product {
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 255, 140, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product h2 {
+    color: #00ff99;
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.product p {
+    color: #f1f1f1;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product button {
+    padding: 12px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.product button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* SECCIÓN DE PRODUCTOS DESTACADOS */
+section.price {
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+    margin-top: 40px;
+}
+
+section.price h3 {
+    color: #00ff99;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+section.price p {
+    color: #f1f1f1;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 15px;
+}
+
+form input {
+    padding: 10px;
+    width: 70%;
+    border-radius: 25px;
+    border: 2px solid #00ff99;
+    background-color: #333;
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    padding: 12px 25px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* TABLET Y LAPTOPS */
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-spacing: 15px;
+}
+
+table td {
+    background-color: #161616;
+    color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+
+table td:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+/* IMAGENES CENTRADAS */
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,195 @@
+/* FUENTE Y FONDO GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+}
+
+/* NAVBAR PRO */
+header {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #00ff99;
+    color: #0f0f0f;
+    transform: scale(1.05);
+}
+
+/* SECCIÓN PRINCIPAL */
+main {
+    padding: 30px;
+}
+
+/* SECCIÓN DE PRODUCTOS */
+#oficina, #teletrabajo {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+#oficina article, #teletrabajo table {
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+}
+
+#oficina article figure img {
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff99;
+}
+
+h3, figcaption {
+    color: #00ff99;
+}
+
+#oficina article p {
+    color: #f1f1f1;
+}
+
+#oficina article blockquote {
+    font-style: italic;
+    color: #00ff99;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* PRODUCTOS EN TELETRABAJO */
+#teletrabajo .producto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+#teletrabajo .producto img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#teletrabajo .producto div {
+    margin-left: 10px;
+}
+
+#teletrabajo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#teletrabajo table caption {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #00ff99;
+}
+
+#teletrabajo table th, #teletrabajo table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #00ff99;
+    color: #fff;
+}
+
+#teletrabajo table th {
+    background-color: #1a1a1a;
+}
+
+#teletrabajo table tr:nth-child(even) {
+    background-color: #2a2a2a;
+}
+
+/* FORMULARIOS */
+form {
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #333;
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+footer a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

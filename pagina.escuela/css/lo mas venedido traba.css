@@ -67,36 +67,50 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* PRODUCTOS DESTACADOS */
-div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-div > div {
-    background-color: #161616;
-    border-radius: 10px;
-    padding: 15px;
-    width: 30%;
+/* TÍTULO PRINCIPAL */
+h1 {
+    color: #00ff99;
     text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+    margin-top: 30px;
 }
 
-div > div img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+/* TÍTULO SECUNDARIO */
+h2 {
+    color: #00ff99;
+    text-align: center;
+    margin-top: 20px;
 }
 
-div > div p {
-    color: #f1f1f1;
+/* TABLA */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.5em;
+    color: #00ff99;
     margin-bottom: 10px;
 }
 
-div > div button {
-    padding: 10px 15px;
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #00ff99;
+    color: #f1f1f1;
+}
+
+th {
+    background-color: #1a1a1a;
+}
+
+tr:nth-child(even) {
+    background-color: #161616;
+}
+
+button {
+    padding: 10px 20px;
     background-color: #00ff99;
     color: #0f0f0f;
     border: none;
@@ -106,23 +120,24 @@ div > div button {
     transition: background 0.3s, transform 0.2s;
 }
 
-div > div button:hover {
+button:hover {
     background-color: #00cc7a;
     transform: scale(1.05);
 }
 
-/* ENLACE DE REGRESO */
+/* ENLACE PARA REGRESAR */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
 a button {
     margin-top: 10px;
-    background-color: #ffcc00;
-    color: #0f0f0f;
+    width: 200px;
 }
 
-a button:hover {
-    background-color: #ffaa00;
-}
-
-/* FOOTER */
+/* PIE DE PÁGINA */
 footer {
     background-color: #1a1a1a;
     padding: 20px;

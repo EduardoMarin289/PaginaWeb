@@ -1,0 +1,130 @@
+/* FUENTE Y FONDO GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+}
+
+/* NAVBAR PRO */
+header {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #00ff99;
+    color: #0f0f0f;
+    transform: scale(1.05);
+}
+
+/* BUSCADOR */
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    background-color: #333;
+    color: #f1f1f1;
+    margin: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* TITULOS */
+h1, h2 {
+    color: #00ff99;
+    margin: 30px 20px 10px;
+}
+
+/* SECCIÓN DE PRODUCTOS */
+div[style*="display: flex"] {
+    display: flex !important;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+div[style*="margin-bottom: 20px; width: 30%"] {
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+}
+
+div[style*="margin-bottom: 20px; width: 30%"] img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+div[style*="margin-bottom: 20px; width: 30%"] p {
+    margin: 10px 0;
+    font-size: 0.95em;
+    color: #f1f1f1;
+}
+
+/* ENLACE DE "VER MÁS" */
+a button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+footer a {
+    color: #00ff99;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}                   

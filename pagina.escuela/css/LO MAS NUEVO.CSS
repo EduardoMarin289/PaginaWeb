@@ -5,6 +5,11 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 0;
+
+    font: normal 16px/1.5 'Segoe UI', sans-serif; /* AGREGUÉ AQUÍ - font */
+    font-style: normal; /* AGREGUÉ AQUÍ - font-style */
+    line-height: 1.6; /* AGREGUÉ AQUÍ - line-height */
+    white-space: normal; /* AGREGUÉ AQUÍ - white-space */
 }
 
 /* Header */
@@ -13,12 +18,20 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 3px solid #00FF7F;
+
+    font-style: normal; /* AGREGUÉ AQUÍ - font-style */
+    line-height: 1.4; /* AGREGUÉ AQUÍ - line-height */
+    white-space: normal; /* AGREGUÉ AQUÍ - white-space */
 }
 
 header h1 {
     color: #00FF7F;
     margin: 0;
     font-size: 2.5em;
+
+    font-style: normal; /* AGREGUÉ AQUÍ - font-style */
+    line-height: 1.2; /* AGREGUÉ AQUÍ - line-height */
+    white-space: normal; /* AGREGUÉ AQUÍ - white-space */
 }
 
 /* Navegación */
@@ -29,6 +42,10 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    font-style: normal; /* AGREGUÉ AQUÍ - font-style */
+    line-height: 1.4; /* AGREGUÉ AQUÍ - line-height */
+    white-space: nowrap; /* AGREGUÉ AQUÍ - white-space */
 }
 
 nav ul li {
@@ -41,11 +58,10 @@ nav ul li a {
     padding: 8px 16px;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
-}
 
-nav ul li a:hover {
-    background-color: #00FF7F;
-    color: #0e0e0e;
+    font-style: normal; /* AGREGUÉ AQUÍ - font-style */
+    line-height: 1.4; /* AGREGUÉ AQUÍ - line-height */
+    white-space: nowrap; /* AGREGUÉ AQUÍ - white-space */
 }
 
 /* Botones */
@@ -59,11 +75,10 @@ button {
     cursor: pointer;
     font-weight: bold;
     transition: background 0.3s, transform 0.2s;
-}
 
-button:hover {
-    background-color: #00cc66;
-    transform: scale(1.05);
+    font-style: normal; /* AGREGUÉ AQUÍ - font-style */
+    line-height: 1.4; /* AGREGUÉ AQUÍ - line-height */
+    white-space: nowrap; /* AGREGUÉ AQUÍ - white-space */
 }
 
 /* Productos */
@@ -72,9 +87,15 @@ div[style*="display: flex"] {
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0;
+
+    font-style: normal; /* AGREGUÉ AQUÍ - font-style */
+    line-height: 1.5; /* AGREGUÉ AQUÍ - line-height */
+    white-space: normal; /* AGREGUÉ AQUÍ - white-space */
 }
 
 div[style*="display: flex"] img {
     border-radius: 10px;
     border: 2px solid #00FF7F;
+
+    white-space: normal; /* AGREGUÉ AQUÍ - white-space */
 }

@@ -1,192 +1,165 @@
-/* Estilos generales */
+/* FONDO Y FUENTE */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #0d0d0d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
 }
 
+/* ENCABEZADO */
 header {
-    background-color: #006400; /* Verde oscuro */
-    color: white;
-    padding: 20px;
+    background-color: #1a1a1a;
+    color: #00ff99;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 2.5em;
 }
 
-nav {
-    background-color: #228B22; /* Verde más claro */
-    padding: 10px 0;
-}
-
+/* NAVBAR */
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-}
-
-nav ul li {
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
+    padding: 0;
+    margin-top: 10px;
+    gap: 25px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
+    color: #00ff99;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
 }
 
 nav ul li a:hover {
-    background-color: #004d00; /* Verde más oscuro al pasar el ratón */
-    border-radius: 5px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    transform: scale(1.05);
 }
 
-/* Estilos para la barra de búsqueda */
+/* BUSCADOR */
 input[type="text"] {
     padding: 10px;
     width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
 }
 
 button {
     padding: 10px 20px;
-    background-color: #006400; /* Verde oscuro */
-    color: white;
+    background-color: #00ff99;
+    color: #0f0f0f;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #004d00;
+    background-color: #00cc7a;
+    transform: scale(1.05);
 }
 
-/* Estilos para el menú lateral */
-td {
+/* TABLA DE DISEÑO PRINCIPAL */
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+/* MENÚ LATERAL */
+td[width="20%"] {
+    background-color: #161616;
     padding: 20px;
+    border-right: 2px solid #00ff99;
+    vertical-align: top;
 }
 
-h3 {
-    font-size: 24px;
-    color: #006400;
+td[width="20%"] h3 {
+    color: #00ff99;
+    margin-top: 0;
 }
 
-ul {
+td[width="20%"] ul {
+    padding-left: 0;
+}
+
+td[width="20%"] li {
     list-style: none;
-    padding: 0;
+    margin-bottom: 20px;
+    color: #f1f1f1;
 }
 
-ul li {
+td[width="20%"] a button {
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* CONTENIDO PRINCIPAL */
+td[width="80%"] {
+    padding: 30px;
+    background-color: #0d0d0d;
+}
+
+h1, h2 {
+    color: #00ff99;
+    margin-bottom: 15px;
+}
+
+/* IMAGEN CENTRAL */
+img[name="economicas"] {
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00ff99;
+}
+
+/* TABLA DE CATEGORÍAS */
+table[align="center"] td {
+    padding: 15px;
+    background-color: #1c1c1c;
+    border: 1px solid #00ff99;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* PRODUCTOS */
+div > div {
+    display: inline-block;
+    background-color: #1a1a1a;
+    margin: 15px;
+    padding: 15px;
+    width: 180px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 255, 140, 0.2);
+}
+
+div > div img {
+    border-radius: 8px;
     margin-bottom: 10px;
 }
 
-ul li a {
-    color: #006400;
-    text-decoration: none;
+div > div p {
+    margin: 10px 0;
+    color: #f1f1f1;
 }
 
-ul li a button {
-    background-color: #228B22; /* Verde claro */
-    padding: 10px 15px;
-}
-
-ul li a button:hover {
-    background-color: #004d00;
-}
-
-/* Estilos para los productos destacados */
-h2 {
-    font-size: 28px;
-    color: #006400;
-    margin-top: 30px;
-}
-
-div {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-div div {
-    text-align: center;
-}
-
-div img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-div p {
-    font-size: 18px;
-    color: #333;
+/* BOTÓN FINAL */
+div[style*="margin-top"] a button {
     margin-top: 10px;
-}
-
-div button {
-    background-color: #006400;
-    padding: 10px 15px;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-div button:hover {
-    background-color: #004d00;
-}
-
-/* Estilos para el footer */
-footer {
-    background-color: #006400;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    div div {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    td {
-        width: 100%;
-    }
-
-    input[type="text"] {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+    width: 150px;
 }

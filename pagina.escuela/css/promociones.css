@@ -3,13 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #000; /* Fondo negro */
+    color: #39ff14; /* Verde neón */
 }
 
 /* Header */
 header {
-    background-color: #1e4620; /* Verde oscuro */
-    color: white;
+    background-color: #000;
+    color: #39ff14;
     padding: 20px;
     text-align: center;
 }
@@ -19,10 +20,11 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #2e7d32; /* Verde principal */
+    background-color: #000;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border-bottom: 2px solid #39ff14;
 }
 
 nav ul li {
@@ -31,15 +33,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #39ff14;
     font-weight: bold;
     padding: 10px 15px;
     display: inline-block;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #1b5e20;
+    background-color: #39ff14;
+    color: #000;
     border-radius: 8px;
 }
 
@@ -47,14 +50,16 @@ nav ul li a:hover {
 input[type="text"] {
     padding: 8px;
     width: 200px;
-    border: 1px solid #ccc;
+    border: 1px solid #39ff14;
     border-radius: 5px;
+    background-color: #000;
+    color: #39ff14;
 }
 
 button {
     padding: 8px 12px;
-    background-color: #388e3c;
-    color: white;
+    background-color: #39ff14;
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -62,28 +67,31 @@ button {
 }
 
 button:hover {
-    background-color: #2e7d32;
+    background-color: #00cc00;
 }
 
 /* Título de sección */
 h1 {
     text-align: center;
-    color: #1e4620;
+    color: #39ff14;
     margin: 20px 0;
 }
 
 /* Productos */
 div[style*="display: flex"] {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 div[style*="display: flex"] > div {
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #111;
+    border: 1px solid #39ff14;
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px #39ff14;
     transition: transform 0.2s ease;
+    color: #39ff14;
 }
 
 div[style*="display: flex"] > div:hover {
@@ -92,6 +100,8 @@ div[style*="display: flex"] > div:hover {
 
 div[style*='align-items: center'] img {
     border-radius: 8px;
+    max-width: 100%;
+    border: 2px solid #39ff14;
 }
 
 /* Tabla */
@@ -99,19 +109,20 @@ table {
     width: 90%;
     margin: 30px auto;
     border-collapse: collapse;
-    background-color: white;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-color: #111;
+    color: #39ff14;
+    box-shadow: 0 0 10px #39ff14;
 }
 
 table caption {
     font-weight: bold;
     font-size: 1.2em;
     margin: 10px 0;
-    color: #1e4620;
+    color: #39ff14;
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #39ff14;
 }
 
 th, td {
@@ -120,11 +131,20 @@ th, td {
 }
 
 th {
-    background-color: #2e7d32;
-    color: white;
+    background-color: #000;
+    color: #39ff14;
 }
 
 td button {
     padding: 6px 10px;
     font-size: 0.9em;
+    background-color: #39ff14;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #00cc00;
 }

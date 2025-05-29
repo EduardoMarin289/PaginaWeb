@@ -187,7 +187,9 @@ footer {
 
 footer a {
     color: #00ff99;
-    text-decoration: none;
+    text-decoration: none; 
+    /* AQUI TEX DECORECTION */
+
 }
 
 footer a:hover {

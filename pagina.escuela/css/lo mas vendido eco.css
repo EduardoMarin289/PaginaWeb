@@ -7,14 +7,18 @@ body {
     color: #f1f1f1;
 }
 
-/* NAVBAR PRO */
-header {
+/* NAVBAR */
+header > h1 {
+    text-align: center;
+    color: #00ff99;
+    margin: 0;
+    padding: 10px 0;
+}
+
+header nav {
     background-color: #1a1a1a;
     box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
     padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 nav ul {
@@ -49,6 +53,7 @@ input[type="text"] {
     border-radius: 25px;
     outline: none;
     font-size: 16px;
+    margin: 20px;
 }
 
 button {
@@ -60,6 +65,7 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
 }
 
 button:hover {
@@ -67,74 +73,57 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* PRODUCTOS DESTACADOS */
-div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+/* TÍTULOS */
+h1, h2 {
+    color: #00ff99;
+    text-align: center;
+    margin-top: 30px;
 }
 
-div > div {
+/* TABLA DE PRODUCTOS */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
     background-color: #161616;
     border-radius: 10px;
-    padding: 15px;
-    width: 30%;
-    text-align: center;
     box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
 }
 
-div > div img {
-    max-width: 100%;
-    border-radius: 10px;
+table caption {
+    color: #00ff99;
+    font-size: 1.5em;
     margin-bottom: 15px;
 }
 
-div > div p {
-    color: #f1f1f1;
-    margin-bottom: 10px;
-}
-
-div > div button {
-    padding: 10px 15px;
-    background-color: #00ff99;
-    color: #0f0f0f;
-    border: none;
-    border-radius: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-}
-
-div > div button:hover {
-    background-color: #00cc7a;
-    transform: scale(1.05);
-}
-
-/* ENLACE DE REGRESO */
-a button {
-    margin-top: 10px;
-    background-color: #ffcc00;
-    color: #0f0f0f;
-}
-
-a button:hover {
-    background-color: #ffaa00;
-}
-
-/* FOOTER */
-footer {
-    background-color: #1a1a1a;
-    padding: 20px;
-    color: #f1f1f1;
+th, td {
+    padding: 15px;
     text-align: center;
+    border-bottom: 1px solid #333;
 }
 
-footer a {
+th {
+    background-color: #1a1a1a;
     color: #00ff99;
-    text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+td {
+    color: #f1f1f1;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+/* BOTONES INTERNOS */
+button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* REGRESAR */
+div[style*="text-align: center;"] button {
+    width: 30%;
+    margin-top: 20px;
 }

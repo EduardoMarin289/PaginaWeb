@@ -1,0 +1,194 @@
+/* FUENTE Y FONDO GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+}
+
+/* HEADER Y NAVBAR */
+header {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #00ff99;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 15px 0 0 0;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00ff99;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #00ff99;
+    color: #0f0f0f;
+    transform: scale(1.05);
+}
+
+/* BUSCADOR */
+.buscador {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* TABLA PRINCIPAL */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td[width="20%"] {
+    background-color: #161616;
+    padding: 20px;
+    vertical-align: top;
+    border-right: 2px solid #ffcc00;
+}
+
+td[width="20%"] h3 {
+    color: #00ff99;
+    margin-top: 0;
+}
+
+td[width="20%"] li {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+td[width="20%"] a button {
+    margin-top: 5px;
+    width: 100%;
+}
+
+td[width="80%"] {
+    padding: 30px;
+}
+
+/* TÍTULOS PRINCIPALES */
+h1, h2 {
+    color: #00ff99;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* IMAGEN DESTACADA */
+td[width="80%"] img {
+    border-radius: 10px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 15px #00ff99;
+}
+
+/* SUBTABLA DE CATEGORÍAS */
+table[align="center"] td {
+    padding: 15px;
+    font-size: 18px;
+    /* AQUI FROM SIZE */
+    font-weight: bold;
+    background-color: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #00ff99;
+    margin: 10px;
+    text-align: center;
+}
+
+/* PRODUCTOS DESTACADOS */
+div.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+div.producto-item {
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
+}
+
+div.producto-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+div.producto-item p {
+    color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+div.producto-item button {
+    padding: 10px 15px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+div.producto-item button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
+}
+
+/* BOTÓN "VER MÁS" */
+div.ver-mas {
+    text-align: center;
+    margin-top: 20px;
+}

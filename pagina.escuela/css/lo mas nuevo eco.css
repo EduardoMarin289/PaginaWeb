@@ -67,7 +67,13 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* PRODUCTOS DESTACADOS */
+/* CONTENIDO PRINCIPAL */
+h1, h2 {
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+/* PRODUCTOS */
 div {
     display: flex;
     justify-content: space-between;
@@ -76,23 +82,25 @@ div {
 }
 
 div > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 30%;
     background-color: #161616;
     border-radius: 10px;
     padding: 15px;
-    width: 30%;
-    text-align: center;
     box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
 }
 
 div > div img {
-    max-width: 100%;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
-    margin-bottom: 15px;
 }
 
 div > div p {
     color: #f1f1f1;
-    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 div > div button {
@@ -111,15 +119,39 @@ div > div button:hover {
     transform: scale(1.05);
 }
 
-/* ENLACE DE REGRESO */
-a button {
-    margin-top: 10px;
-    background-color: #ffcc00;
-    color: #0f0f0f;
+/* FORMULARIOS */
+form {
+    background-color: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 255, 140, 0.2);
 }
 
-a button:hover {
-    background-color: #ffaa00;
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #333;
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #00ff99;
+    color: #0f0f0f;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #00cc7a;
+    transform: scale(1.05);
 }
 
 /* FOOTER */

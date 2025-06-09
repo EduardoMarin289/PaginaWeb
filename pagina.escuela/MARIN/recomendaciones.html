@@ -8,39 +8,46 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f0f0f0;
+      padding: 0;
+      background-color: #000;
+      color: #39ff14;
     }
 
     header {
-      background-color: #004d00; /* VERDE OSCURO */
-      color: white;
-      padding: 15px 20px;
-    }
-
-    header h1 {
-      margin: 0;
+      background-color: #000;
+      color: #39ff14;
+      padding: 20px;
+      text-align: center;
     }
 
     nav ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
+      list-style-type: none;
+      margin: 0;
       padding: 0;
-      margin: 10px 0 0 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #39ff14;
     }
 
     nav ul li {
-      margin-right: 15px;
+      margin: 0 15px;
     }
 
     nav ul li a {
-      color: white;
       text-decoration: none;
+      color: #39ff14;
       font-weight: bold;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     nav ul li a:hover {
-      text-decoration: underline;
+      background-color: #39ff14;
+      color: #000;
+      border-radius: 8px;
     }
 
     .search-bar {
@@ -51,63 +58,83 @@
     .search-bar input {
       padding: 8px;
       width: 200px;
+      border: 1px solid #39ff14;
+      border-radius: 5px;
+      background-color: #000;
+      color: #39ff14;
     }
 
     .search-bar button {
       padding: 8px 12px;
-      background-color: #006600; /* VERDE */
-      color: white;
+      background-color: #39ff14;
+      color: #000;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
     .search-bar button:hover {
-      background-color: #004d00;
+      background-color: #00cc00;
     }
 
     h1, h2 {
       text-align: center;
-      color: #004d00;
+      color: #39ff14;
+      margin: 20px 0;
     }
 
     .productos {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
       gap: 20px;
+      padding: 20px;
     }
 
     .producto {
-      background-color: white;
-      border-radius: 8px;
+      background-color: #111;
+      border: 1px solid #39ff14;
+      border-radius: 10px;
       padding: 15px;
       width: 250px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
       text-align: center;
+      box-shadow: 0 0 10px #39ff14;
+      transition: transform 0.3s ease, opacity 1s ease;
+      opacity: 0;
+      color: #39ff14;
+    }
+
+    .producto.show {
+      opacity: 1;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
     }
 
     .producto img {
       width: 100px;
       height: 100px;
       object-fit: cover;
-    }
-
-    .producto p {
-      margin: 8px 0;
+      border-radius: 8px;
+      border: 2px solid #39ff14;
     }
 
     .producto button {
       padding: 8px 12px;
-      background-color: #009933; /* VERDE MÁS VIBRANTE */
-      color: white;
+      background-color: #39ff14;
+      color: #000;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .producto button:hover {
-      background-color: #007a29;
+      background-color: #00cc00;
+      transform: scale(1.1);
     }
 
     .footer-buttons {
@@ -118,19 +145,26 @@
     .footer-buttons input {
       padding: 8px;
       margin-right: 10px;
+      border: 1px solid #39ff14;
+      border-radius: 5px;
+      background-color: #000;
+      color: #39ff14;
     }
 
     .footer-buttons button {
       padding: 8px 12px;
       margin: 5px;
-      background-color: #004d00;
-      color: white;
+      background-color: #39ff14;
+      color: #000;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     .footer-buttons button:hover {
-      background-color: #006600;
+      background-color: #00cc00;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -161,53 +195,12 @@
   <h2>RECOMENDACIONES</h2>
 
   <div class="productos">
-    <!-- Producto 1 -->
-    <div class="producto">
-      <img src="/uuu/gamer_img/1.png" alt="Producto 1">
-      <p><strong>CARACTERÍSTICAS</strong></p>
-      <p><strong>Precio:</strong> $15,999 MXN</p>
-      <button>COMPRAR</button>
-    </div>
-
-    <!-- Producto 2 -->
-    <div class="producto">
-      <img src="/uuu/gamer_img/2.png" alt="Producto 2">
-      <p><strong>CARACTERÍSTICAS</strong></p>
-      <p><strong>Precio:</strong> $18,499 MXN</p>
-      <button>COMPRAR</button>
-    </div>
-
-    <!-- Producto 3 -->
-    <div class="producto">
-      <img src="/uuu/gamer_img/3.jpg" alt="Producto 3">
-      <p><strong>CARACTERÍSTICAS</strong></p>
-      <p><strong>Precio:</strong> $14,299 MXN</p>
-      <button>COMPRAR</button>
-    </div>
-
-    <!-- Producto 4 -->
-    <div class="producto">
-      <img src="/uuu/gamer_img/4.jpg" alt="Producto 4">
-      <p><strong>CARACTERÍSTICAS</strong></p>
-      <p><strong>Precio:</strong> $20,999 MXN</p>
-      <button>COMPRAR</button>
-    </div>
-
-    <!-- Producto 5 -->
-    <div class="producto">
-      <img src="/dianaweB/16.jpg" alt="Producto 5">
-      <p><strong>CARACTERÍSTICAS</strong></p>
-      <p><strong>Precio:</strong> $12,800 MXN</p>
-      <button>COMPRAR</button>
-    </div>
-
-    <!-- Producto 6 -->
-    <div class="producto">
-      <img src="/uuu/gamer_img/6.jpg" alt="Producto 6">
-      <p><strong>CARACTERÍSTICAS</strong></p>
-      <p><strong>Precio:</strong> $16,750 MXN</p>
-      <button>COMPRAR</button>
-    </div>
+    <div class="producto"><img src="/uuu/gamer_img/1.png" alt="Producto 1"><p><strong>CARACTERÍSTICAS</strong></p><p><strong>Precio:</strong> $15,999 MXN</p><button>COMPRAR</button></div>
+    <div class="producto"><img src="/uuu/gamer_img/2.png" alt="Producto 2"><p><strong>CARACTERÍSTICAS</strong></p><p><strong>Precio:</strong> $18,499 MXN</p><button>COMPRAR</button></div>
+    <div class="producto"><img src="/uuu/gamer_img/3.jpg" alt="Producto 3"><p><strong>CARACTERÍSTICAS</strong></p><p><strong>Precio:</strong> $14,299 MXN</p><button>COMPRAR</button></div>
+    <div class="producto"><img src="/uuu/gamer_img/4.jpg" alt="Producto 4"><p><strong>CARACTERÍSTICAS</strong></p><p><strong>Precio:</strong> $20,999 MXN</p><button>COMPRAR</button></div>
+    <div class="producto"><img src="/dianaweB/16.jpg" alt="Producto 5"><p><strong>CARACTERÍSTICAS</strong></p><p><strong>Precio:</strong> $12,800 MXN</p><button>COMPRAR</button></div>
+    <div class="producto"><img src="/uuu/gamer_img/6.jpg" alt="Producto 6"><p><strong>CARACTERÍSTICAS</strong></p><p><strong>Precio:</strong> $16,750 MXN</p><button>COMPRAR</button></div>
   </div>
 
   <div class="footer-buttons">
@@ -215,6 +208,30 @@
     <button>IR</button>
     <a href="../MARIN/gamer1.html"><button>Regresar</button></a>
   </div>
+
+  <script>
+    // Animación de aparición secuencial
+    window.addEventListener('DOMContentLoaded', () => {
+      const productos = document.querySelectorAll('.producto');
+      productos.forEach((prod, i) => {
+        setTimeout(() => {
+          prod.classList.add('show');
+        }, i * 200);
+      });
+    });
+
+    // Animación en botones "COMPRAR"
+    const botones = document.querySelectorAll('.producto button');
+    botones.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          btn.style.transform = 'scale(1)';
+        }, 100);
+        alert('¡Producto agregado al carrito!');
+      });
+    });
+  </script>
 
 </body>
 </html>

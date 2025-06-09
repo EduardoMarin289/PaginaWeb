@@ -1,105 +1,341 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRENVOD PC - Gamer</title>
-    <link rel="stylesheet" href="/css/gamer 1.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>FRENVOD PC - Gamer</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        color: #39ff14;
+    }
+    header {
+        background-color: #000;
+        color: #39ff14;
+        padding: 20px;
+        text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-bottom: 2px solid #39ff14;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #39ff14;
+        font-weight: bold;
+        padding: 10px 15px;
+        display: inline-block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav ul li a:hover {
+        background-color: #39ff14;
+        color: #000;
+        border-radius: 8px;
+    }
+    input[type="text"] {
+        padding: 8px;
+        width: 200px;
+        border: 1px solid #39ff14;
+        border-radius: 5px;
+        background-color: #000;
+        color: #39ff14;
+    }
+    button {
+        padding: 8px 12px;
+        background-color: #39ff14;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #00cc00;
+    }
+    h1, h2 {
+        text-align: center;
+        color: #39ff14;
+    }
+    table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        color: #39ff14;
+    }
+    table td {
+        padding: 10px;
+        text-align: center;
+    }
+    table td button {
+        padding: 6px 10px;
+        background-color: #39ff14;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+    }
+    .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 20px;
+    }
+    .gif-section img {
+        border: 2px solid #39ff14;
+        border-radius: 10px;
+        box-shadow: 0 0 15px #39ff14;
+        width: 400px;
+    }
+    .snake-game {
+        background-color: #111;
+        padding: 15px;
+        border-radius: 10px;
+        border: 2px solid #39ff14;
+        box-shadow: 0 0 10px #39ff14;
+        text-align: center;
+    }
+    canvas {
+        background-color: #000;
+        border: 1px solid #39ff14;
+        display: block;
+        margin: 0 auto 15px auto;
+    }
+    .productos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+    }
+    .productos > div {
+        background-color: #111;
+        border: 1px solid #39ff14;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 0 10px #39ff14;
+        text-align: center;
+        transition: transform 0.2s ease;
+    }
+    .productos > div:hover {
+        transform: translateY(-5px);
+    }
+    .productos img {
+        border-radius: 8px;
+        max-width: 100%;
+        border: 2px solid #39ff14;
+    }
+    /* Nuevo CSS para el cuadro neón de las marcas */
+    .marcas-neon {
+        width: fit-content;
+        margin: 0 auto 20px auto; /* Centrado y espacio abajo */
+        padding: 15px 30px;
+        border: 2px solid #39ff14; /* borde verde neón */
+        border-radius: 10px;
+        box-shadow: 0 0 15px #39ff14; /* efecto neón */
+        background-color: #000; /* fondo negro */
+    }
+    .marcas-neon table {
+        color: #39ff14;
+        border-collapse: collapse;
+    }
+    .marcas-neon td {
+        padding: 10px 25px;
+        font-weight: bold;
+        font-size: 1.1em;
+        border: none;
+    }
+</style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="inicio.html">Home</a></li>
-                <li><a href="../Estudiantes2.html">Estudiantes</a></li>
-                <li><a href="gamer1.html">Gamer</a></li>
-                <li><a href="../TRabajadores2.html">Trabajadores</a></li>
-                <li><a href="../uso personal.html">Uso Personal</a></li>
-                <li><a href="../Economicas2.html">Económicas</a></li>
-                <li><a href="../promociones.html">Promociones</a></li>
-                <li><a href="../info.html">Info</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div style="text-align: center; margin-bottom: 20px;">
-        <input type="text" placeholder="Buscar...">
-        <button>Buscar</button>
-    </div>
-    
-    <table width="100%">
-        <td width="20%" valign="top">
-            <h3>Menú</h3>
-            <ul>
-                <li>RECOMENDACIONES
-                    <a href="../MARIN/recomendaciones.html">
-                        <button>IR</button>
-                    </a>
-                <li>LO MÁS VENDIDO
-                    <a href="../MARIN/LO MAS NUevo.html">
-                        <button>IR</button>
-                    </a>
-                <li>LOS MÁS NUEVOS
-                    <a href="../MARIN/LO MAS NUevo.html">
-                        <button>IR</button>
-                    </a>
-                <li>LIQUIDACIÓN
-                    <a href="../MARIN/liquidacion.html">
-                        <button>IR</button>
-                    </a>
-                <li>PARA HACER STREAM
-                    <a href="../MARIN/PARA HACER ESTREAMS.HTML">
-                        <button>IR</button>
-                    </a>
-            </ul>
-        </td>
-        <td width="80%" valign="top">
-        <h1>GAMER</h1>
-            <h2>MARCAS MEJOR CALIFICADAS</h2>
-            
-            <!-- GIF AÑADIDO AQUÍ -->
-                <img src="/gamer 22.gif" alt="GIF de gaming" width="600" height="300">
-            </div>
-            
-            <table align="center">
-                <tr>
-                    <td>HP</td>
-                    <td>DELL</td>
-                    <td>MSI</td>
-                </tr>
-                <tr>
-                    <td>RAZZER</td>
-                    <td>ASUS</td>
-                    <td>Corsair</td>
-                </tr>
-            </table>
 
-            <h2>RECOMENDACIONES</h2>
-            <div>
-                <div>
-                    <img src="../dianaweB/1.jpeg" width="50" height="50" alt="Producto" style="border: 2px solid black;">
-                    <p>CARACTERÍSTICAS</p>
-                    <button>COMPRAR</button>
-                    
-                </div>
-                <div>
-                    <img src="../dianaweB/4.jpeg" width="50" height="50" alt="Producto" style="border: 2px solid black;">
-                    <p>CARACTERÍSTICAS</p>
-                    <button>COMPRAR</button>
-                </div>
-                <div>
-                    <img src="../dianaweB/5.jpeg" width="50" height="50" alt="Producto"style="border: 2px solid black;">
-                    <img src="" width="50" height="50" alt="Producto">
-                    <p>CARACTERÍSTICAS</p>
-                    <button>COMPRAR</button>
-                </div>
-            </div>
-        </td>
-    </table>
-    
-    <div style="text-align: center; margin-top: 20px;">
-        <a href="/gamer.html">
-            <button>IR gamer 2</button>
-        </a>
+<header>
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Home</a></li>
+            <li><a href="../Estudiantes2.html">Estudiantes</a></li>
+            <li><a href="gamer1.html">Gamer</a></li>
+            <li><a href="../TRabajadores2.html">Trabajadores</a></li>
+            <li><a href="../uso personal2.html">Uso Personal</a></li>
+            <li><a href="../Economicas2.html">Económicas</a></li>
+            <li><a href="../promociones.html">Promociones</a></li>
+            <li><a href="../info.html">Info</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div style="text-align: center; margin: 20px;">
+    <input type="text" placeholder="Buscar..." />
+    <button>Buscar</button>
+</div>
+
+<h1>GAMER</h1>
+<h2>MARCAS MEJOR CALIFICADAS</h2>
+
+<!-- Aquí agregué el cuadro con las marcas -->
+<div class="marcas-neon">
+  <table>
+      <tr>
+          <td>MSI</td>
+          <td>ASUS</td>
+          <td>RAZZER</td>
+      </tr>
+      <tr>
+          <td>DELL</td>
+          <td>HP</td>
+          <td>Corsair</td>
+      </tr>
+  </table>
+</div>
+
+<div class="content-wrapper">
+    <div class="gif-section">
+        <img src="/gamer 22.gif" alt="GIF de gaming" />
     </div>
+
+    <div class="snake-game">
+        <canvas id="snake" width="200" height="200"></canvas>
+        <button id="startBtn">Jugar</button>
+        <p id="scoreDisplay" style="color:#39ff14; font-weight: bold; margin-top: 10px;">Puntaje: 0</p>
+    </div>
+</div>
+
+<h2>RECOMENDACIONES</h2>
+<div class="productos">
+    <div>
+        <img src="../dianaweB/4.jpeg" width="100" height="100" alt="Producto" />
+        <p>CARACTERÍSTICAS</p>
+        <button>COMPRAR</button>
+    </div>
+    <div>
+        <img src="../dianaweB/1.jpeg" width="100" height="100" alt="Producto" />
+        <p>CARACTERÍSTICAS</p>
+        <button>COMPRAR</button>
+    </div>
+    <div>
+        <img src="../dianaweB/5.jpeg" width="100" height="100" alt="Producto" />
+        <p>CARACTERÍSTICAS</p>
+        <button>COMPRAR</button>
+        <a href="/gamer.html">
+            <button>siguiente</button>
+             </a>               
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById("snake");
+    const ctx = canvas.getContext("2d");
+    const box = 20;
+
+    let snake = [];
+    let food = {};
+    let direction;
+    let gameInterval;
+    let score = 0;
+    const scoreDisplay = document.getElementById("scoreDisplay");
+
+    document.getElementById("startBtn").addEventListener("click", iniciarJuego);
+
+    document.addEventListener("keydown", changeDirection);
+
+    function changeDirection(event) {
+        const key = event.keyCode;
+        if ((key === 37 || key === 65) && direction !== "RIGHT") direction = "LEFT";  
+        else if ((key === 38 || key === 87) && direction !== "DOWN") direction = "UP"; 
+        else if ((key === 39 || key === 68) && direction !== "LEFT") direction = "RIGHT"; 
+        else if ((key === 40 || key === 83) && direction !== "UP") direction = "DOWN"; 
+    }
+
+    function crearComida() {
+        food = {
+            x: Math.floor(Math.random() * (canvas.width / box)) * box,
+            y: Math.floor(Math.random() * (canvas.height / box)) * box,
+        };
+        for (let i = 0; i < snake.length; i++) {
+            if (snake[i].x === food.x && snake[i].y === food.y) {
+                crearComida();
+            }
+        }
+    }
+
+    function iniciarJuego() {
+        clearInterval(gameInterval);
+        snake = [];
+        score = 0;
+        scoreDisplay.textContent = "Puntaje: 0";
+        direction = undefined;
+        for (let i = 2; i >= 0; i--) {
+            snake.push({ x: i * box, y: 0 });
+        }
+        crearComida();
+        gameInterval = setInterval(gameLoop, 100);
+    }
+
+    function gameLoop() {
+        if (!direction) return; // no iniciar sin dirección
+
+        // Mover serpiente
+        let headX = snake[0].x;
+        let headY = snake[0].y;
+
+        if (direction === "LEFT") headX -= box;
+        else if (direction === "UP") headY -= box;
+        else if (direction === "RIGHT") headX += box;
+        else if (direction === "DOWN") headY += box;
+
+        // Colisiones con pared
+        if (headX < 0 || headX >= canvas.width || headY < 0 || headY >= canvas.height) {
+            clearInterval(gameInterval);
+            alert("¡Perdiste! Tu puntaje fue: " + score);
+            return;
+        }
+
+        // Colisiones con sí misma
+        for (let i = 0; i < snake.length; i++) {
+            if (snake[i].x === headX && snake[i].y === headY) {
+                clearInterval(gameInterval);
+                alert("¡Perdiste! Tu puntaje fue: " + score);
+                return;
+            }
+        }
+
+        // Mover cuerpo
+        snake.unshift({ x: headX, y: headY });
+
+        // Comer comida
+        if (headX === food.x && headY === food.y) {
+            score++;
+            scoreDisplay.textContent = "Puntaje: " + score;
+            crearComida();
+        } else {
+            snake.pop();
+        }
+
+        // Dibujar todo
+        ctx.fillStyle = "#000";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = "#39ff14";
+        for (let i = 0; i < snake.length; i++) {
+            ctx.fillRect(snake[i].x, snake[i].y, box, box);
+        }
+
+        ctx.fillStyle = "red";
+        ctx.fillRect(food.x, food.y, box, box);
+    }
+</script>
+
 </body>
 </html>
